@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en>"
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="view point" content="width=device-width,intial-scale=1.0">
+<title>personal portfolia</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/3f256e5257.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    
+    <nav>
+       <img  <src="images/logo.png"class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#contact">contact</a></li>
+     </ul>
+</nav>
+    <div class="header-text">
+       <p>web Developer</p>
+            <h1>Hi,I'M <span>Mounika</span><br>From Srikakulam</h1>
+    </div>
+        </div>
+</div>
+<!--  -------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi iam Mounika potnuru from Srikakulam district.To work in a challenging
+                    enviroment where i can put my best efforts and knowledge to reach the goals
+                    and also iam able to work within a team setting.my skills and education to a growth
+                    organization </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Languages</span><br> Web Development,Python,C</li>
+                    <li><span>Applications</span><br>ms office</li>
+                    <li><span>Data Base</span><br>sql server</li>
+                    <li><span>Web Technologies</span><br>Html,css</li>
+                    <li><span>Hardware</span><br>IOT,vlsi</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li><span>Projects</span><br>Online musical website-spotify clone</li>
+                    <li><span>Projects</span><br>IOT based garbage montoring system and domestic care</li>
+                    <li><span>Projects</span><br>power efficency clock plused D-flip flop using transmission gates</li>
+                     </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>B-tech</span><br>Centurion University||Electronic communication Engineering with 8.5%</li>
+                    <li><span>Board of intermediate</span><br>Sri chaitanya junior college with 78%||Srikakulam||</li>
+                    <li><span>Secondary Education</span><br>A.V.N.(V)MPL High school with 9.5%||Srikakulam||</li>
+                    
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--  ----------------------services-------------------------------- -->
+<div id="Services"
+ <div class="container">
+    <h1 class="sub-title">My Services</h1>  
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web design</h2>
+            <p>i have done some projects using html,css and also java script method in 
+                 web techonolgy</p>
+            
+        </div>
+        <div>
+            <i class="fa-solid fa-file"></i>
+            <h2>ms office</h2>
+            <p> i know the application  of ms office  like word, xl sheet,power point</p>
+            
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-microchip"></i>
+            <h2>IOT design</h2>
+            <p>i have done some projects on iot during semsters yeah little bit knowledge 
+                 iot and also vlsi </p>
+            
+    </div>
+ </div>
+ 
+</div>
+</div>
+<!-- -----------------------contact---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mounikapotnuru94@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>7386731763</p>
+                
+                <div class="social-icons">
+                    <a href="https:://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="personal portfolia - Copy.mhtml" class="btn">Download cv</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your Name" required>
+                    <input type="email" name="email" placeholder="your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn">submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="copy right">
+    <p>copyright <i class="fa-solid fa-user"></i>mounikapotnuru</p>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+
+
+
+</body>
+</html>
